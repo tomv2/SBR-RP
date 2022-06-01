@@ -1,5 +1,6 @@
 import can
 import os
+import time
 
 print('Initialising can bus...')
 os.system("sudo /sbin/ip link set can0 up type can bitrate 500000") #check ECU bitrate is 500000
