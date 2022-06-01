@@ -8,4 +8,4 @@ print('System ready')
 bus = can.interface.Bus(channel='can0', bustype='socketcan')
 notifier = can.Notifier(bus, [can.Printer()])
 while True:
-  time.sleep(0.01)
+  time.sleep(10)
