@@ -15,4 +15,5 @@ def initialiseCan():
         time.sleep(30)
         initialiseCan()
 print('System ready')
-notifier = can.Notifier(bus, [can.Printer()])
+os.system("python bus = can.interface.Bus(channel='can0', bustype='socketcan')")
+os.system("python notifier = can.Notifier(bus, [can.Printer()])")
