@@ -15,7 +15,4 @@ def initialiseCan():
         time.sleep(30)
         initialiseCan()
 print('System ready')
-
-
-
-
+notifier = can.Notifier(bus, [can.Printer()])
