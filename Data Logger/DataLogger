@@ -5,11 +5,6 @@ with open('rawdata.log', 'rb') as file_in:
         file_out.writelines(filter(lambda line: b'32E#' in line, file_in))
         
 with open('output.txt', 'r') as f:
-    print('Intake temp:', '\t', '')
-    for line in f:
-        print(line[31], line[32], '\t', line[33], line[34], '\t', line[35], line[36], '\t', line[37], line[38], '\t', line[39], line[40], '\t', line[41], line[42], '\t', line[43], line[44])
-
-with open('output.txt', 'r') as f:
     with open('Raw_log.csv', mode='w') as csv_file:
         fieldnames = ['Timestamp', 'Intake temp', 'Oil pressure', 'Water temp', 'Tachometer', 'Lambda', 'Barometer', 'TPS']
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
@@ -26,4 +21,3 @@ with open('output.txt', 'r') as f:
             n=line[31]+line[32]
             tempconv = (int(n, 16)-32)/1.8
             writer.writerow({'Timestamp': line[1]+line[2]+line[3]+line[4]+line[5]+line[6]+line[7]+line[8]+line[9]+line[10]+line[11]+line[12]+line[13]+line[14]+line[15]+line[16]+line[17],'Intake temp': str(round(tempconv, 1)), 'Oil pressure': line[33]+line[34], 'Water temp': line[35]+line[36], 'Tachometer': line[37]+line[38], 'Lambda': line[39]+line[40], 'Barometer': line[41]+line[42], 'TPS':line[43]+line[44]})
-
