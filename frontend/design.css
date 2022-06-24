@@ -1,0 +1,118 @@
+/* defaults */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+/* dashboard-body */
+.dashboard-body {
+	height: 100vh;
+	background-color: #0f0f0f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* flex-direction: column; */
+}
+
+.dashboard-body .dashboard {
+	background-color: #1e1e1e;
+	width: 370px;
+	height: 260px;
+	padding: 3px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* rpm */
+
+.dashboard-body .dashboard .rpm-circles {
+	display: flex;
+	justify-content: space-between;
+	gap: 2.5px;
+}
+
+.dashboard-body .dashboard .rpm-circles .circle {
+	padding: 10px;
+	background-color: #f3f3f3;
+	border-radius: 50%;
+	margin: 0.5px;
+}
+
+.dashboard-body .dashboard .rpm-number {
+	margin-top: 8px;
+	text-align: center;
+}
+
+.dashboard-body .dashboard .rpm-number h1 {
+	font-size: 5rem;
+	color: #fff;
+}
+
+/* bottom readings */
+.dashboard-body .dashboard .readings {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	color: #fff;
+	margin-top: 5px;
+}
+
+.dashboard-body .dashboard .readings h4 {
+	color: #ffff00;
+	padding-bottom: 5px;
+	font-size: 0.9rem;
+}
+
+.dashboard-body .dashboard .readings p {
+	font-size: 0.9rem;
+}
+
+.dashboard-body .dashboard .readings .middle-line {
+	border: 1px solid #fff;
+}
+
+.dashboard-body .dashboard .readings .left,
+.dashboard-body .dashboard .readings .right {
+	width: 100%;
+}
+
+.dashboard-body .dashboard .readings .left .oil-pressure,
+.dashboard-body .dashboard .readings .left .fuel-pressure,
+.dashboard-body .dashboard .readings .right .oil-temp,
+.dashboard-body .dashboard .readings .right .coolant-temp {
+	padding-left: 15px;
+}
+
+.dashboard-body .dashboard .readings .left .oil-pressure {
+	margin-top: 10px;
+	border-top: 1px solid #fff;
+	padding-top: 10px;
+}
+
+.dashboard-body .dashboard .readings .right .oil-temp {
+	margin-top: 10px;
+	border-top: 1px solid #fff;
+	padding-top: 10px;
+}
+
+/* full screen icon */
+.dashboard-body .dashboard .fullscreen-icon {
+	align-self: flex-end;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.dashboard-body .dashboard .fullscreen-icon img {
+	width: 20px;
+}
+
+.dashboard-body .dashboard .fullscreen-icon:hover {
+	cursor: pointer;
+}

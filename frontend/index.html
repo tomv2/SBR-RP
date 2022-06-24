@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="design.css" />
+		<script type="text/javascript" src="/eel.js"></script>
+		<script defer type="module" src="./scripts/main.js"></script>
+		<script defer type="module" src="./scripts/fullscreen.js"></script>
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<div class="dashboard-body">
+			<div class="dashboard" id="dashboard">
+				<div class="rpm-circles">
+					<div class="circle circle-1"></div>
+					<div class="circle circle-2"></div>
+					<div class="circle circle-3"></div>
+					<div class="circle circle-4"></div>
+					<div class="circle circle-5"></div>
+					<div class="circle circle-6"></div>
+					<div class="circle circle-7"></div>
+					<div class="circle circle-8"></div>
+					<div class="circle circle-9"></div>
+					<div class="circle circle-10"></div>
+					<div class="circle circle-11"></div>
+					<div class="circle circle-12"></div>
+					<div class="circle circle-13"></div>
+					<div class="circle circle-14"></div>
+					<div class="circle circle-15"></div>
+				</div>
+				<div class="rpm-number">
+					<h1 class="rpm">0</h1>
+				</div>
+				<div class="readings">
+					<div class="left">
+						<div class="fuel-pressure">
+							<h4>Fuel Pressure</h4>
+							<p>Bar</p>
+						</div>
+						<div class="oil-pressure">
+							<h4>Oil Pressure</h4>
+							<p class="oil-pressure-value"> Bar</p>
+						</div>
+					</div>
+					<div class="middle-line"></div>
+					<div class="right">
+						<div class="coolant-temp">
+							<h4>Coolant Temp</h4>
+							<p class="coolant-temp-value">0°C</p>
+						</div>
+						<div class="oil-temp">
+							<h4>Battery voltage</h4>
+							<p class="battery-voltage-value">0 V</p>
+						</div>
+					</div>
+				</div>
+				<div class="fullscreen-icon" id="fullscreen-icon">
+					<img src="./images/full-screen.svg" alt="full-screen-icon" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
