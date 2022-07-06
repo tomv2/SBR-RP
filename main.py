@@ -19,7 +19,7 @@ battery_voltage_thread = threading.Thread(target=battery_voltage.battery_voltage
 battery_voltage_thread.start()
 
 # for coolant temp
-coolant_temp_th2read = threading.Thread(target=coolant_temp.coolant_temp)
+coolant_temp_thread = threading.Thread(target=coolant_temp.coolant_temp)
 coolant_temp_thread.start()
 
 #Oil pressure
