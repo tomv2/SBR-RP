@@ -28,9 +28,7 @@ def rpm():
                enginespeed2 = enginespeed * 1.1291869
             if enginespeed > 7500:
                enginespeed2 = enginespeed * 1.143541
-            if enginespeed > 8000:
+            if enginespeed > 8500:
                enginespeed2 = enginespeed * 1.157895
-            if enginespeed > 9000:
-               enginespeed2 = enginespeed * 
             eel.updateRPM(enginespeed2)
             time.sleep(0.1)
