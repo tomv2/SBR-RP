@@ -14,6 +14,6 @@ def coolant_temp():
             eel.updateCoolantTemp(round(tempconv,2))
             time.sleep(1)
             if tempconv > 85:
-               GPIO.output(30, 1)
+               GPIO.output(4, 1)
             if tempconv < 85:
-               GPIO.output(30, 0)
+               GPIO.output(4, 0)
