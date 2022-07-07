@@ -1,7 +1,7 @@
 import time
 import RPi.GPIO as GPIO  
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(30, GPIO.OUT)
+GPIO.setup(4, GPIO.OUT)
 
 import eel
 
