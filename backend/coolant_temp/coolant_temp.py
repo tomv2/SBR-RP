@@ -17,5 +17,3 @@ def coolant_temp():
                GPIO.output(30, 1)
             if tempconv < 85:
                GPIO.output(30, 0)
-                
-
