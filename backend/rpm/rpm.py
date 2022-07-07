@@ -7,7 +7,6 @@ def rpm():
       while True:
          for line in f:
             n = line[33]+line[34]+line[35]+line[36]
-            enginespeed = (int(n, 16))
+            enginespeed = (int(n, 16))+20000
             eel.updateRPM(enginespeed)
             time.sleep(0.1)
-      
